@@ -5,6 +5,8 @@ defmodule Pinyin.Mixfile do
     [app: :mpinyin,
      version: "0.0.1",
      elixir: "~> 1.0",
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -15,9 +17,24 @@ defmodule Pinyin.Mixfile do
     [applications: []]
   end
 
+  defp description do
+    """
+    Pinyin module for Elixir.
+    """
+  end
+
   defp deps do
     [
       { :uni2pinyin, git: "https://github.com/mihawk/uni2pinyin.git" }
     ]
+  end
+
+  defp package do
+    [# These are the default files included in the package
+     files: ["lib", "mix.exs", "README*", "LICENSE*"],
+     contributors: ["seagull", "HanHor"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/Hor/mpinyin",
+              "Docs" => "http://github.com/Hor/upyun-elixir"}]
   end
 end
