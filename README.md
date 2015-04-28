@@ -1,4 +1,7 @@
 Mpinyin
 =======
 
-** TODO: Add description **
+
+### API
+
+  Pinyin.letter('测试')
