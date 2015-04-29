@@ -2,7 +2,7 @@ defmodule Pinyin.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :mpinyin,
+    [app: :pinyin,
      version: "0.0.2",
      elixir: "~> 1.0",
      description: description,
@@ -34,7 +34,7 @@ defmodule Pinyin.Mixfile do
      files: ["lib", "mix.exs", "README*", "LICENSE*"],
      contributors: ["seagull", "HanHor"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/Hor/mpinyin",
+     links: %{"GitHub" => "https://github.com/Hor/epinyin",
               "Docs" => "http://github.com/Hor/upyun-elixir"}]
   end
 end
