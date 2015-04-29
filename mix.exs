@@ -32,7 +32,7 @@ defmodule Pinyin.Mixfile do
   defp package do
     [# These are the default files included in the package
      files: ["lib", "mix.exs", "README*", "LICENSE*"],
-     contributors: ["seagull", "HanHor"],
+     contributors: ["jseagull", "HanHor"],
      licenses: ["MIT"],
      links: %{"GitHub" => "https://github.com/Hor/epinyin",
               "Docs" => "http://github.com/Hor/upyun-elixir"}]
