@@ -7,6 +7,9 @@ defmodule PinyinTest do
     assert Pinyin.letter("仇家") == [["chou", "qiu"], "jia"]
     assert Pinyin.letter("小a") == ["xiao", "a"]
     assert Pinyin.letter("It's 美国人") == ["I", "t", "'", "s", " ", "mei", "guo", "ren"]
+
+    assert Pinyin.heteronym_to_string("仇家") == ["chou^qiu", "jia"]
+    assert Pinyin.heteronym_to_string("仇家", "+") == ["chou+qiu", "jia"]
   end
 
 end

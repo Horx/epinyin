@@ -1,5 +1,16 @@
 defmodule Pinyin do
 
+  def heteronym_to_string(string, separator \\ "^") do
+      list = letter(string)
+      Enum.reduce(list, [], fn(x, result) ->
+        if is_list x do
+          result ++ [Enum.join(x, separator)]
+        else
+          result ++ [x]
+        end
+      end)
+  end
+
   def letter(string) do
     pro = string |> :unicode.characters_to_list
                  |> (Enum.map &:uni2pinyin.decode/1)
