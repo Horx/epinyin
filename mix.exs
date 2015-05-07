@@ -3,7 +3,7 @@ defmodule Pinyin.Mixfile do
 
   def project do
     [app: :pinyin,
-     version: "0.0.2",
+     version: "0.0.3",
      elixir: "~> 1.0",
      description: description,
      package: package,
@@ -34,7 +34,7 @@ defmodule Pinyin.Mixfile do
      files: ["lib", "mix.exs", "README*", "LICENSE*"],
      contributors: ["jseagull", "HanHor"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/Hor/epinyin",
-              "Docs" => "http://github.com/Hor/upyun-elixir"}]
+     links: %{"GitHub" => "https://github.com/HorX/epinyin",
+              "Docs" => "http://github.com/HorX/epinyin"}]
   end
 end
